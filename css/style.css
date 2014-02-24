@@ -3,8 +3,11 @@
 -----------------------*/
 body {
   color: white;
-  font-family: helvetica, arial, sans-serif;
+  font-family: "Source Sans Pro", helvetica, arial, sans-serif;
   font-size: 18px;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 a,
