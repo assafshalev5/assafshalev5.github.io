@@ -46,3 +46,49 @@ a:hover {
   margin-top: 15px;
   display: inline-block;
 }
+
+/*-----------------------
+         PROJECTS
+-----------------------*/
+.projects {
+  width: 100%;
+}
+
+.project {
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+.project .background {
+  width: 100%;
+  display: block;
+}
+
+.project .overlay {
+  opacity: 0;
+  transition: opacity .25s;
+
+  /* Use absolute positioning to give 100% width and height */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 35%;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project .overlay-text {
+  border-bottom: solid 4px white;
+  padding-bottom: 10px;
+  display: inline-block;
+}
